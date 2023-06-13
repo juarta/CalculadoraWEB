@@ -5,13 +5,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Calculadora Trigonométrica</title>
+    <title>Calculadora WEB</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <h1>Calculator Trigonométrica</h1>
+            <h1>Calculadora WEB</h1>
             <%--<div class="row">--%>
                 <div class="col-md-4">
                     <h3>Coseno de un ángulo</h3>
@@ -19,10 +19,10 @@
                         <label for="angle">Ingrese un ángulo en grados (0-360):</label>
                         <input type="number" class="form-control" id="angle" placeholder="Ángulo" />
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="calculateCosine()">Calcular</button>
+                    <button type="button" class="btn btn-primary" onclick="calculateCoseno()">Calcular</button>
                       <!-- Contenedor para mostrar el resultado del cálculo -->
-                    <div id="cosineResultmonto" style="margin-top: 10px;"></div>
-                    <div id="cosineResult" style="margin-top: 10px;"></div>
+                    <div id="cosenoResultmonto" style="margin-top: 10px;"></div>
+                    <div id="cosenoResult" style="margin-top: 10px;"></div>
                     
                 </div>
                 <div class="col-md-4">
@@ -31,11 +31,11 @@
                         <label for="angle">Ingrese un ángulo en grados (0-360):</label>
                         <input type="number" class="form-control" id="angle2" placeholder="Ángulo" />
                     </div>
-                    <button type="button" class="btn btn-primary" onclick="calculateTangent()">Calcular</button>
+                    <button type="button" class="btn btn-primary" onclick="calculateTangente()">Calcular</button>
                       
                        <!-- Contenedor para mostrar el resultado del cálculo -->
-                    <div id="tangentResultmonto" style="margin-top: 10px;"></div>
-                    <div id="tangentResult" style="margin-top: 10px;"></div>
+                    <div id="tangenteResultmonto" style="margin-top: 10px;"></div>
+                    <div id="tangenteResult" style="margin-top: 10px;"></div>
                 </div>
                 <div class="col-md-4">
                     <h3>Área del círculo</h3>
@@ -44,11 +44,11 @@
                         <input type="number" class="form-control" id="radius" placeholder="Radio" />
                     </div>
                          <!-- Contenedor para mostrar el resultado del cálculo -->
-                    <button type="button" class="btn btn-primary" onclick="calculateCircleArea()">Calcular</button>
-                     <div id="circleAreaResultmonto" style="margin-top: 10px;"></div>
-                    <div id="circleAreaResult" style="margin-top: 10px;"></div>
+                    <button type="button" class="btn btn-primary" onclick="calculateAreaCirculo()">Calcular</button>
+                     <div id="AreaCirculoResultmonto" style="margin-top: 10px;"></div>
+                    <div id="AreaCirculoResult" style="margin-top: 10px;"></div>
                 </div>
-            </div>
+       
         </div>
           <!-- Incluye las bibliotecas externas necesarias -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
